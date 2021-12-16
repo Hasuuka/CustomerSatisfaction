@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include  <clientlistmodel.h>
 #include <editdialog.h>
+#include <deletedialog.h>
+#include <changedialog.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,6 +25,10 @@ private slots:
     void on_pushButtonAdd_clicked();
     void addClient(QString firstName, QString lastName, Satisfaction satisfaction);
 
+
+    void on_pushButtonDelete_clicked();
+
+    void on_pushButtonEdit_clicked();
 
 private:
     Ui::MainWindow *ui;

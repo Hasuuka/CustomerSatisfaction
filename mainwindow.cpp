@@ -38,3 +38,25 @@ void MainWindow::addClient(QString firstName, QString lastName, Satisfaction sat
     qDebug()<< "easy";
 }
 
+
+void MainWindow::on_pushButtonDelete_clicked()
+{
+    deleteDialog dlg;
+    if(dlg.exec()==QDialog::Accepted){
+        SharedData::instance()->clients()->removeAt(dlg.id());
+        m_clientListModel = new ClientListModel(SharedData::instance()->clients(), this);
+        ui->clientList->setModel(m_clientListModel);
+    }
+}
+
+
+void MainWindow::on_pushButtonEdit_clicked()
+{
+    changeDialog dlg;
+    if(dlg.exec()==QDialog::Accepted){
+        SharedData::instance()->clients()->replace(dlg.id(),Client(dlg.firstName(), dlg.lastName(), dlg.satisfaction()));
+        m_clientListModel = new ClientListModel(SharedData::instance()->clients(), this);
+        ui->clientList->setModel(m_clientListModel);
+    }
+}
+
