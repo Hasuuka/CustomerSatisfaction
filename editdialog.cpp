@@ -50,3 +50,33 @@ Satisfaction editDialog::satisfaction()const{
     }
 }
 
+
+void editDialog::on_happyButton_clicked()
+{
+    ui->satisfactionEdit->setText("sehr zufrieden");
+}
+
+
+void editDialog::on_happinessButton_clicked()
+{
+    ui->satisfactionEdit->setText("zufrieden");
+}
+
+
+void editDialog::on_neutralButton_clicked()
+{
+    ui->satisfactionEdit->setText("neutral");
+}
+
+
+void editDialog::on_sadButton_clicked()
+{
+    ui->satisfactionEdit->setText("etwas unzufrieden");
+}
+
+
+void editDialog::on_cryingButton_clicked()
+{
+    ui->satisfactionEdit->setText("sehr unzufrieden");
+}
+

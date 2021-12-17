@@ -20,6 +20,17 @@ public:
     QString lastName()const;
     Satisfaction satisfaction()const;
     int id()const;
+private slots:
+    void on_happyButton_clicked();
+
+    void on_happinessButton_clicked();
+
+    void on_neutralButton_clicked();
+
+    void on_sadButton_clicked();
+
+    void on_cryingButton_clicked();
+
 private:
     Ui::changeDialog *ui;
 };

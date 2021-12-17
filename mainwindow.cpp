@@ -35,7 +35,6 @@ void MainWindow::addClient(QString firstName, QString lastName, Satisfaction sat
     SharedData::instance()->addClient(firstName, lastName, satisfaction);
     m_clientListModel = new ClientListModel(SharedData::instance()->clients(), this);
     ui->clientList->setModel(m_clientListModel);
-    qDebug()<< "easy";
 }
 
 

@@ -5,8 +5,8 @@ SharedData::SharedData()
     m_clients.append(Client("Enrico","Tran", sehrZufrieden));
     m_clients.append(Client("Miclas","Mende", zufrieden));
     m_clients.append(Client("Calvin","Wiegandt", neutral));
-    m_clients.append(Client("Josa","Bussieck", etwasUnzufrieden));
-    m_clients.append(Client("Julian","Holsteg", sehrUnzufrieden));
+    m_clients.append(Client("Peter","Parker", etwasUnzufrieden));
+    m_clients.append(Client("Mezzo","Mix", sehrUnzufrieden));
 
 }
 

@@ -1,5 +1,6 @@
 #include "changedialog.h"
 #include "ui_changedialog.h"
+#include <QDebug>
 
 changeDialog::changeDialog(QWidget *parent) :
     QDialog(parent),
@@ -53,5 +54,35 @@ Satisfaction changeDialog::satisfaction()const{
             }
         }
     }
+}
+
+
+void changeDialog::on_happyButton_clicked()
+{
+    ui->satisfactionEdit->setText("sehr zufrieden");
+}
+
+
+void changeDialog::on_happinessButton_clicked()
+{
+    ui->satisfactionEdit->setText("zufrieden");
+}
+
+
+void changeDialog::on_neutralButton_clicked()
+{
+    ui->satisfactionEdit->setText("neutral");
+}
+
+
+void changeDialog::on_sadButton_clicked()
+{
+    ui->satisfactionEdit->setText("etwas unzufrieden");
+}
+
+
+void changeDialog::on_cryingButton_clicked()
+{
+    ui->satisfactionEdit->setText("sehr unzufrieden");
 }
 

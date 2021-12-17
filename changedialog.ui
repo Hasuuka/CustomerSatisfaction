@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Edit Client</string>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
@@ -29,12 +29,12 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>30</y>
-     <width>193</width>
+     <width>194</width>
      <height>138</height>
     </rect>
    </property>
@@ -73,11 +73,79 @@
       </property>
      </widget>
     </item>
-    <item row="3" column="1">
-     <widget class="QLineEdit" name="satisfactionEdit"/>
-    </item>
     <item row="2" column="1">
      <widget class="QLineEdit" name="lastNamelineEdit"/>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="happyButton">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon: url(:/happy.png);
+border:none;
+background-color:rgba(255, 255, 255,100);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="happinessButton">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon: url(:/happiness.png);
+border:none;
+background-color:rgba(255, 255, 255,100);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="neutralButton">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon: url(:/neutral.png);
+border:none;
+background-color:rgba(255, 255, 255,100);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sadButton">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon: url(:/sad.png);
+border:none;
+background-color:rgba(255, 255, 255,100);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cryingButton">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon: url(:/crying.png);
+border:none;
+background-color:rgba(255, 255, 255,100);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="satisfactionEdit">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
