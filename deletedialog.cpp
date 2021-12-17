@@ -16,5 +16,6 @@ deleteDialog::~deleteDialog()
 int deleteDialog::id() const
 {
     QString input = ui->idEdit->text();
-    return input.toInt();
+    int output = input.toInt() - 1;
+    return output;
 }

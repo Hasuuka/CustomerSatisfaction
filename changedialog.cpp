@@ -24,7 +24,8 @@ QString changeDialog::lastName() const{
 
 int changeDialog::id() const{
     QString input = ui->idEdit->text();
-    return input.toInt();
+    int output = input.toInt() - 1;
+    return output;
 }
 
 Satisfaction changeDialog::satisfaction()const{

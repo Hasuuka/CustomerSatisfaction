@@ -30,6 +30,8 @@ private slots:
 
     void on_pushButtonEdit_clicked();
 
+
+
 private:
     Ui::MainWindow *ui;
     ClientListModel* m_clientListModel;
